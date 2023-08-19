@@ -1,0 +1,11 @@
+version: '3.2'
+services:
+
+  api:
+      image: oip_api_server
+      build:
+        dockerfile: ${PWD}/Dockerfile
+        context: ${PWD}
+      ports:
+        - ${SERVER_PORT}:${SERVER_PORT}
+      restart: always
