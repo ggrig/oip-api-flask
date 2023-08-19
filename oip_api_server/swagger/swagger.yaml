@@ -32,7 +32,7 @@ paths:
           description: Successful update
         "400":
           description: Invalid request
-      x-openapi-router-controller: swagger_server.controllers.default_controller
+      x-openapi-router-controller: oip_api_server.controllers.default_controller
   /bank-account-info:
     post:
       summary: Submit Bank Account Information
@@ -60,7 +60,7 @@ paths:
       deprecated: false
       security:
       - oauth2: []
-      x-openapi-router-controller: swagger_server.controllers.default_controller
+      x-openapi-router-controller: oip_api_server.controllers.default_controller
   /booking-source:
     post:
       summary: Create Booking Source
@@ -88,7 +88,7 @@ paths:
       deprecated: false
       security:
       - oauth2: []
-      x-openapi-router-controller: swagger_server.controllers.default_controller
+      x-openapi-router-controller: oip_api_server.controllers.default_controller
   /countries:
     post:
       summary: Create Country
@@ -116,7 +116,7 @@ paths:
       deprecated: false
       security:
       - oauth2: []
-      x-openapi-router-controller: swagger_server.controllers.default_controller
+      x-openapi-router-controller: oip_api_server.controllers.default_controller
   /hotels:
     post:
       summary: Create Hotel
@@ -144,7 +144,7 @@ paths:
       deprecated: false
       security:
       - oauth2: []
-      x-openapi-router-controller: swagger_server.controllers.default_controller
+      x-openapi-router-controller: oip_api_server.controllers.default_controller
   /payment-methods:
     post:
       summary: Create Payment Method
@@ -172,7 +172,7 @@ paths:
       deprecated: false
       security:
       - oauth2: []
-      x-openapi-router-controller: swagger_server.controllers.default_controller
+      x-openapi-router-controller: oip_api_server.controllers.default_controller
   /salesperson:
     post:
       summary: Create Salesperson
@@ -200,7 +200,7 @@ paths:
       deprecated: false
       security:
       - oauth2: []
-      x-openapi-router-controller: swagger_server.controllers.default_controller
+      x-openapi-router-controller: oip_api_server.controllers.default_controller
 components:
   schemas:
     AccountingDocument:
@@ -969,6 +969,6 @@ components:
           scopes:
             read: Grants read access
             write: Grants write access
-      x-tokenInfoFunc: swagger_server.controllers.authorization_controller.check_oauth2
-      x-scopeValidateFunc: swagger_server.controllers.authorization_controller.validate_scope_oauth2
+      x-tokenInfoFunc: oip_api_server.controllers.authorization_controller.check_oauth2
+      x-scopeValidateFunc: oip_api_server.controllers.authorization_controller.validate_scope_oauth2
 
