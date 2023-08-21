@@ -62,5 +62,5 @@ docker-compose down
 
 ```bash
 
-ssh -i C:\ssh-keys\ggrig_dev_key.pem ubuntu@3.70.222.226
+ssh -i C:\ssh-keys\ggrig_dev_key.pem ubuntu@3.77.236.211
 ```
