@@ -57,3 +57,10 @@ docker-compose up -d --build
 #stop
 docker-compose down
 ```
+  
+# Connecting to EC2 ubuntu instance
+
+```bash
+
+ssh -i C:\ssh-keys\ggrig_dev_key.pem ubuntu@3.70.222.226
+```
