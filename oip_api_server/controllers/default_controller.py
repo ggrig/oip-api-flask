@@ -13,8 +13,12 @@ from oip_api_server.models.paymentmethods_body import PaymentmethodsBody  # noqa
 from oip_api_server.models.salesperson_body import SalespersonBody  # noqa: E501
 from oip_api_server import util
 
+import logging
+logger = logging.getLogger(__name__)
 
 def accountingdocuments_document_id_put(body, document_id):  # noqa: E501
+    logger.info(">> Accounting Document")
+
     """Update Accounting Document
 
      # noqa: E501
@@ -32,6 +36,8 @@ def accountingdocuments_document_id_put(body, document_id):  # noqa: E501
 
 
 def bank_account_info_post(body):  # noqa: E501
+    logger.info(">> Bank Account Information")
+
     """Submit Bank Account Information
 
     Submits bank account information to the Online Invoice Portal (OIP). # noqa: E501
@@ -47,6 +53,8 @@ def bank_account_info_post(body):  # noqa: E501
 
 
 def booking_source_post(body):  # noqa: E501
+    logger.info(">> Booking Source")
+
     """Create Booking Source
 
     Creates a new booking source. # noqa: E501
@@ -62,6 +70,8 @@ def booking_source_post(body):  # noqa: E501
 
 
 def countries_post(body):  # noqa: E501
+    logger.info(">> Countries")
+
     """Create Country
 
     Creates a new country entry. # noqa: E501
@@ -77,6 +87,8 @@ def countries_post(body):  # noqa: E501
 
 
 def hotels_post(body):  # noqa: E501
+    logger.info(">> Hotels")
+
     """Create Hotel
 
     Creates a new hotel entry. # noqa: E501
@@ -92,6 +104,8 @@ def hotels_post(body):  # noqa: E501
 
 
 def payment_methods_post(body):  # noqa: E501
+    logger.info(">> Payment Methods")
+
     """Create Payment Method
 
     Creates a new payment method entry. # noqa: E501
@@ -107,6 +121,8 @@ def payment_methods_post(body):  # noqa: E501
 
 
 def salesperson_post(body):  # noqa: E501
+    logger.info(">> Salesperson")
+
     """Create Salesperson
 
     Creates a new salesperson entry. # noqa: E501

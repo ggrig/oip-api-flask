@@ -6,6 +6,8 @@ services:
       build:
         dockerfile: ${PWD}/Dockerfile
         context: ${PWD}
+      volumes:
+        - ${PWD}/logs:/logs
       ports:
         - ${SERVER_PORT}:${SERVER_PORT}
       restart: always
